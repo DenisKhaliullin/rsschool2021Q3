@@ -17,8 +17,8 @@
 .navigation__item {
     text-decoration: none;
     color: $color-light;
-}
-
-.navigation__link:hover {
-    color: #9d8665;
+    @extend %transition;
+    &:hover {
+        color: #9d8665;
+    }
 }

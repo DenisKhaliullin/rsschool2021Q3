@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-    font-family: 'Forum', Verdana, sans-serif;
+    @extend %font-add;
     letter-spacing: 5px;
     text-transform: uppercase;
     margin: 0;
@@ -21,7 +21,7 @@ h1 {
     @include font ($size: 28px, $height: 31px)
 }
 h2 {
-    font-family: 'Forum', Verdana, sans-serif;
+    @extend %font-add;
     letter-spacing: 5px;
     text-transform: uppercase;
 
@@ -29,7 +29,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Forum', Verdana, sans-serif;
+    @extend %font-add;
     letter-spacing: 5px;
     text-transform: uppercase;
 
@@ -37,9 +37,7 @@ h3 {
 }
 
 h4 {
-    font-style: normal;
-    font-weight: 200;
-    font-size: 22px;
-    line-height: 26px;
     letter-spacing: 2px;
+
+    @include font($size: 22px, $height: 26px, $weight: 200)
     }
