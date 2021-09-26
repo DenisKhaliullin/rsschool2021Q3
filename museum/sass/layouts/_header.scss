@@ -1,0 +1,35 @@
+.header {
+    background-color: #030303;
+    
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 46px 0 46px 0;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 38px;
+}
+
+.logo__title {
+    color: $color-light;
+}
+
+.logo-svg {
+    background-image: url(/deniskhaliullin-JSFE2021Q3/museum/assets/img/svg/logo.svg);
+    width: 49px;
+    height: 26px;
+    display: inline-block;
+}
+
+.logo:hover{
+    filter: invert(57%) sepia(6%) saturate(2052%) hue-rotate(356deg) brightness(84%) contrast(86%);
+    transition: .5s;
+}
+
+

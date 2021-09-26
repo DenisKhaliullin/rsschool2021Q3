@@ -1,0 +1,40 @@
+.welcome__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img__welcome {
+    background-image: linear-gradient(to right, black 10%, transparent 100%), url(/deniskhaliullin-JSFE2021Q3/museum/assets/img/welcome-slider/1.jpg);
+    
+}
+
+.welcome__image {
+    width: 1000px;
+    height: 750px;
+    
+}
+.welcome__title {
+    position: absolute;
+    top: 233px;
+    left: 462px;
+    color: $color-light;
+}
+
+.welcome__button {
+    padding-top: 240px;
+}
+
+.welcome__description {
+    position: absolute;
+    top: 478px;
+    left: 462px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: $color-light;
+
+    @include font ($size: 28px, $height: 33px)
+}
+.welcome__item {
+    display: block;
+}

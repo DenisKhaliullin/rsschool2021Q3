@@ -5,46 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/favicon.ico">
-    <link rel="stylesheet" href="/deniskhaliullin-JSFE2021Q3/museum/style.css">
+    <link rel="stylesheet" href="/deniskhaliullin-JSFE2021Q3/museum/sass/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/style.css">
     <title>museum</title>
 </head>
 <body>
     <header class="header">
-        <div class="header-wrapper">
-            <a href="#" class="logo__link">
-                <div class="logo__block">
-                  <span class="logo-svg"></span>
-                  <h1 class="logo">louvre</h1>
-                </div>
+        <div class="wrapper header__wrapper">
+            <a href="#" class="logo">
+                <span class="logo-svg"></span>
+                <h1 class="logo__title">louvre</h1>
             </a>
         <nav class="header__navigation">
             <ul class="navigation">
-                <li><a href="#visiting"></a>Visiting</li>
-                <li>Explore</li>
-                <li>Video</li>
-                <li>Gallery</li>
-                <li>Tickets</li>
-                <li>Contacts</li>
+                <li class="navigation__link"><a class="navigation__item" href="#visiting">Visiting</a></li>
+                <li class="navigation__link"><a class="navigation__item" href="#explore">Explore</a></li>
+                <li class="navigation__link"><a class="navigation__item" href="#video">Video</a></li>
+                <li class="navigation__link"><a class="navigation__item" href="#gallery">Gallery</a></li>
+                <li class="navigation__link"><a class="navigation__item" href="#tickets">Tickets</a></li>
+                <li class="navigation__link"><a class="navigation__item" href="#contacts">Contacts</a></li>
             </ul>
         </nav>
         </div>
     </header>
     <main>
-        <section class="welcome">
-            <div class="wrapper welcome_wrapper">
+        <section class="welcome dark-section">
+            <div class="wrapper welcome__wrapper">
                 <div class="welcome__content">
-                    <h2>welcome to the louvre</h2>
-                    <h4>From the castle to the museum</h4>
+                    <h2 class="welcome__title"> <span class="welcome__item">welcome</span> to the louvre</h2>
+                    <p class="welcome__description">From the castle to the museum</p>
                     <div class="welcome__button">
                         <button class="button button_colored">Discover the Louvre</button>
                     </div>
+                </div>
+                <div class="img__welcome">
+                    <img src="assets/img/welcome-slider/1.jpg" class="welcome__image" alt="Djoconda picture">
                 </div>
                 
 
             </div>
         </section>
-        <section class="visiting">
-            <div class="wrapper visiting_wrapper">
+        <section class="visiting" id="visiting">
+            <div class="wrapper visiting__wrapper">
                 <h2 class="visiting__title">virtual tour</h2>
                     <div class="wrapper card_wrapper">
                         <div class="img"></div>
@@ -52,19 +60,19 @@
                         <h4>360° Virtual Tour</h4>
                         <p>Google Street Panorama View</p>
                     </div>
-                    <div class="wrapper card_wrapper">
+                    <div class="wrapper card__wrapper">
                         <div class="img"></div>
                         <h3>denon wing</h3>
                         <h4>360° Virtual Tour</h4>
                         <p>Google Street Panorama View</p>
                     </div>
-                    <div class="wrapper card_wrapper">
+                    <div class="wrapper card__wrapper">
                         <div class="img"></div>
                         <h3>colonnade perrault</h3>
                         <h4>360° Virtual Tour</h4>
                         <p>Google Street Panorama View</p>
                     </div>
-                    <div class="wrapper card_wrapper">
+                    <div class="wrapper card__wrapper">
                         <div class="img"></div>
                         <h3>cgreek hall</h3>
                         <h4>360° Virtual Tour</h4>
@@ -84,8 +92,8 @@
                     </div>
             </div>
         </section>
-        <section class="explore">
-            <div class="wrapper explore_wrapper">
+        <section class="explore dark-section">
+            <div class="wrapper explore__wrapper">
                 <div class="left-block-text">
                     <h2>picture explore</h2>
                     <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
@@ -97,8 +105,11 @@
                 </div>
             </div>
         </section>
-        <section class="gallery">
-            <div class="wrapper gallery_wrapper">
+        <section class="video">
+
+        </section>
+        <section class="gallery dark-section">
+            <div class="wrapper gallery__wrapper">
                 <h2>art gallery</h2>
                 <div class="picture-wrapper">
                     <div class="picture-inner-wrapper">

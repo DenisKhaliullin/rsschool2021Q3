@@ -1,0 +1,24 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    max-width: 720px;
+}
+.navigation__link {
+    color: $color-light;
+    list-style: none;
+    padding: 0 20px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+
+.navigation__item {
+    text-decoration: none;
+    color: $color-light;
+}
+
+.navigation__link:hover {
+    color: #9d8665;
+}
