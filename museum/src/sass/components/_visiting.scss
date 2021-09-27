@@ -34,11 +34,12 @@
 
 .card__title {
     position: relative;
+    padding-top: 10px;
     &::after {
         content: '';
         position: absolute;
         left: 0;
-        top: 44px;
+        top: 56px;
         width: 68%;
         height: 3px;
         background-color: #710707;

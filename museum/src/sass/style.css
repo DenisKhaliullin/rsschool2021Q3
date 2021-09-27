@@ -519,6 +519,10 @@ h4 {
   text-decoration: none;
   padding-left: 38px;
 }
+.logo:hover {
+  filter: invert(57%) sepia(6%) saturate(2052%) hue-rotate(356deg) brightness(84%) contrast(86%);
+  transition: 0.3s;
+}
 
 .logo__title {
   color: #ffffff;
@@ -531,21 +535,18 @@ h4 {
   display: inline-block;
 }
 
-.logo:hover {
-  filter: invert(57%) sepia(6%) saturate(2052%) hue-rotate(356deg) brightness(84%) contrast(86%);
-  transition: 0.5s;
-}
-
 .navigation {
   display: flex;
   justify-content: space-between;
-  max-width: 720px;
+  max-width: 775px;
+  max-width: 100%;
 }
 
 .navigation__link {
   color: #ffffff;
   list-style: none;
-  padding: 0 20px;
+  margin-left: 20px;
+  padding: 0 16px;
   font-style: normal;
   font-weight: 200;
   font-size: 22px;
@@ -633,12 +634,13 @@ h4 {
 
 .card__title {
   position: relative;
+  padding-top: 10px;
 }
 .card__title::after {
   content: "";
   position: absolute;
   left: 0;
-  top: 44px;
+  top: 56px;
   width: 68%;
   height: 3px;
   background-color: #710707;
@@ -647,10 +649,24 @@ h4 {
 
 .explore__wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .explore__title {
   color: #ffffff;
+  margin: 0;
+  padding-bottom: 79px;
+  position: relative;
+}
+.explore__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 115px;
+  width: 100%;
+  height: 3px;
+  background-color: #710707;
+  transition: width 1s;
 }
 
 .explore__text {
@@ -664,6 +680,66 @@ h4 {
 
 .explore__text span {
   color: #CAAA7D;
+}
+
+.explore__image {
+  padding-bottom: 75px;
+}
+
+.gallery__title {
+  margin: 0;
+  padding-top: 75px;
+  color: #ffffff;
+}
+
+.picture__wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  max-height: 2125px;
+  padding-top: 75px;
+}
+
+.picture-inner__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 3000px;
+  row-gap: 36px;
+  column-gap: 24px;
+}
+
+.gallery__image {
+  width: 456px;
+}
+
+.child:nth-child(1) {
+  margin-top: 75px;
+}
+
+.child:nth-child(11) {
+  margin-top: 75px;
+}
+
+.video__title {
+  color: #9d8665;
+}
+
+.tickets__title {
+  color: #9d8665;
+}
+
+.underline__title {
+  position: relative;
+}
+.underline__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 115px;
+  width: 100%;
+  height: 3px;
+  background-color: #710707;
 }
 
 /*# sourceMappingURL=style.css.map */

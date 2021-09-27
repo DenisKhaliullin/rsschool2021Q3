@@ -1,12 +1,14 @@
 .navigation {
     display: flex;
     justify-content: space-between;
-    max-width: 720px;
+    max-width: 775px;
+    max-width: 100%;
 }
 .navigation__link {
     color: $color-light;
     list-style: none;
-    padding: 0 20px;
+    margin-left: 20px;
+    padding: 0 16px;
     font-style: normal;
     font-weight: 200;
     font-size: 22px;

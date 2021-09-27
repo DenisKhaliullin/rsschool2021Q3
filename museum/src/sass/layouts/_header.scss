@@ -14,6 +14,11 @@
     align-items: center;
     text-decoration: none;
     padding-left: 38px;
+    &:hover {
+        filter: invert(57%) sepia(6%) saturate(2052%) hue-rotate(356deg) brightness(84%) contrast(86%);
+    transition: .3s;
+
+    }
 }
 
 .logo__title {
@@ -26,10 +31,3 @@
     height: 26px;
     display: inline-block;
 }
-
-.logo:hover{
-    filter: invert(57%) sepia(6%) saturate(2052%) hue-rotate(356deg) brightness(84%) contrast(86%);
-    transition: .5s;
-}
-
-
