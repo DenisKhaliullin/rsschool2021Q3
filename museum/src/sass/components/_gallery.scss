@@ -1,0 +1,35 @@
+
+.gallery__title {
+    margin: 0;
+    padding-top: 75px;
+    color: $color-light;
+}
+.picture__wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    max-height: 2125px;
+    padding-top: 75px;
+}
+
+.picture-inner__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 3000px;
+    row-gap: 36px;
+    column-gap: 24px;
+}
+
+.gallery__image {
+    width: 456px;
+}
+
+
+.child:nth-child(1) {
+    margin-top: 75px;
+}
+
+.child:nth-child(11) {
+    margin-top: 75px;
+}

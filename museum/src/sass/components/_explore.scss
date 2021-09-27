@@ -1,0 +1,37 @@
+.explore__wrapper {
+display: flex;
+justify-content: space-between;
+}
+
+.explore__title {
+    color: $color-light;
+    margin: 0;
+    padding-bottom: 79px;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 115px;
+        width: 100%;
+        height: 3px;
+        background-color: #710707;
+        transition: width 1s;
+      
+    }
+}
+
+.explore__text {
+    color: $color-light;
+    max-width: 660px;
+
+    @include font ($size: 22px, $height: 38px, $weight: 300)
+    
+}
+
+.explore__text span {
+    color: #CAAA7D;
+}
+.explore__image {
+    padding-bottom: 75px;
+}
