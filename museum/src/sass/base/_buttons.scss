@@ -1,20 +1,23 @@
-.button {
+button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.button__colored {
+    display: inline-block;
     width: 360px;
     height: 75px;
-    padding: 2px  64px;
+    margin-top: 75px;
+    padding: 24px 0;
     color: $color-light;
     background-color: #710707;
     border-radius: 10px;
-    font-size: 2.2rem;
-    line-height: 2.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    text-decoration: none;
     font-family: 'Roboto', Verdana, sans-serif;
-    border: 1px solid #710707;
     letter-spacing: 2px;
 }
 
-.welcome__button {
-    padding-top: 240px;
-}

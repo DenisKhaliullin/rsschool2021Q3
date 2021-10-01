@@ -1,25 +1,20 @@
 .welcome__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 810px;
+    display: block;
+    z-index: 5;
+    position: relative;
 }
 
-.welcome__image {
-    width: 1000px;
-    height: 750px;
-    padding-bottom: 32px;
-}
 .welcome__title {
-    position: absolute;
-    top: 233px;
-    left: 462px;
+    margin: 0;
+    padding-top: 150px;
     color: $color-light;
+    width: 598px;
 }
 
 .welcome__text {
-    position: absolute;
-    top: 478px;
-    left: 462px;
+    margin-top: 25px;
+    margin-bottom: 0;
     font-weight: 300;
     letter-spacing: 2px;
     color: $color-light;
@@ -28,4 +23,83 @@
 }
 .welcome__item {
     display: block;
+}
+
+.swiper__container {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.swiper {
+	width: 1000px;
+	height: 750px;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.swiper-slide img{
+    max-width: 100%;
+}
+
+.pagination__wrapper {
+	width: 600px;
+	height: 120px;
+	background-color: $color-background-dark;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background: $color-light;
+    border-radius: 0;
+  }
+  
+.swiper-pagination-bullet-active {
+    background: $color-additional
+}
+
+.swiper-arrows {
+    width: 30px;
+    height: 8px;
+    background-repeat: no-repeat;
+	background-position: center;
+	transition: filter 0.4s;
+        &:hover {
+            filter: invert(55%) sepia(12%) saturate(919%) hue-rotate(356deg) brightness(95%) contrast(93%);
+        }
+}
+
+.swiper-button-left {
+    margin-left: 60px;
+    background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/svg/left.svg);
+}
+
+.swiper-button-right {
+    margin: 0 75px 0 18px;
+    background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/svg/right.svg);
+}
+
+.slide-item {
+    color: $color-light;
+
+    @include font ($size: 22px, $height: 40px)
+}
+
+.welcome-section__slider-fraction {
+    display: flex;
+    justify-content: space-between;
+    width: 76px;
+}
+
+.swiper-pagination {
+    margin-left: 55px;
 }

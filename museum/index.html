@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" href="src/assets/favicon.ico">
     <link rel="stylesheet" href="/deniskhaliullin-JSFE2021Q3/museum/sass/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,59 +37,83 @@
     <main>
         <section class="welcome dark-section">
             <div class="wrapper welcome__wrapper">
-                <div class="welcome__content">
-                    <h2 class="welcome__title"> <span class="welcome__item">welcome</span> to the louvre</h2>
-                    <p class="welcome__text">From the castle to the museum</p>
-                    <div class="welcome__button">
-                        <button class="button button_colored">Discover the Louvre</button>
+                <div class="swiper__container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./src/assets/img/welcome-slider/1.jpg" width="1000px" alt="slide-1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/img/welcome-slider/2.jpg" width="1000px" alt="slide-2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/img/welcome-slider/3.jpg" width="1000px" alt="slide-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/img/welcome-slider/4.jpg" width="1000px" alt="slide-4">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/img/welcome-slider/5.jpg" width="1000px" alt="slide-5">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="img__welcome">
-                    <img src="assets/img/welcome-slider/1.jpg" class="welcome__image" alt="Djoconda picture">
+                <h2 class="welcome__title"> <span class="welcome__item">welcome</span> to the louvre</h2>
+                <p class="welcome__text">From the castle to the museum</p>
+                <a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736" target="_blank" class="button button__colored">Discover the Louvre</a>
+
+                <div class="pagination__wrapper">
+                    <div class="welcome-section__slider-fraction">
+                        <span class="slide-item current-item total-item">01</span>
+                        <span class="slide-item current-item total-item">|</span>
+                        <span class="slide-item current-item total-item">05</span>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <button class="swiper-arrows swiper-button-left"></button>
+                    <button class="swiper-arrows swiper-button-right"></button>
                 </div>
                 
-
             </div>
         </section>
         <section class="visiting" id="visiting">
             <div class="wrapper visiting__wrapper">
                 <h2 class="visiting__title underline__title">virtual tour</h2>
                     <div class="wrapper card_wrapper">
-                        <a href="#" class="card__item">
-                            <img src="../museum/assets/img//visiting/1.jpg" width="440" height="285" alt="royal palace">
+                        <a href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815" class="card__item">
+                            <img src="../museum/src/assets/img/visiting/1.jpg" width="440" height="285" alt="royal palace">
                             <h3 class="card__title">royal palace</h3>
-                            <h4>360° Virtual Tour</h4>
-                            <p>Google Street Panorama View</p>
+                            <h4 class= "card__title-second">360° Virtual Tour</h4>
+                            <p class="card__description">Google Street Panorama View</p>
                         </a>
-                        <a href="#" class="card__item">
-                            <img src="../museum/assets/img/visiting/2.jpg" width="440" height="285" alt="denon wing">
+                        <a href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_CwP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500" class="card__item">
+                            <img src="../museum/src/assets/img/visiting/2.jpg" width="440" height="285" alt="denon wing">
                             <h3 class="card__title">denon wing</h3>
-                            <h4>360° Virtual Tour</h4>
-                            <p>Google Street Panorama View</p>
+                            <h4 class= "card__title-second">360° Virtual Tour</h4>
+                            <p class="card__description">Google Street Panorama View</p>
                         </a>
-                        <a href="#" class="card__item">
-                            <img src="../museum/assets/img/visiting/3.jpg" width="440" height="285" alt="colonnade_perrault">
+                        <a href="https://www.google.com/maps/@48.8601723,2.3395439,3a,88.4y,322.04h,84.25t/data=!3m7!1e1!3m5!1sAF1QipNMZGQuEA-pAUvIG_eP_2f3gWTKZEJ6XLVJ-Pgb!2e10!3e12!7i10240!8i5120" class="card__item">
+                            <img src="../museum/src/assets/img/visiting/3.jpg" width="440" height="285" alt="colonnade_perrault">
                             <h3 class="card__title">colonnade perrault</h3>
-                            <h4>360° Virtual Tour</h4>
-                            <p>Google Street Panorama View</p>
+                            <h4 class= "card__title-second">360° Virtual Tour</h4>
+                            <p class="card__description">Google Street Panorama View</p>
                         </a>
-                        <a href="#" class="card__item">
-                            <img src="../museum/assets/img/visiting/4.jpg" width="440" height="285" alt="cgreek hall">
+                        <a href="https://www.google.com/maps/@48.860183,2.3356156,3a,90y,177.69h,95.61t/data=!3m7!1e1!3m5!1sAF1QipP7uFZnTITRe-7AEVAgHAfqiCL-03gvBHcYWgF3!2e10!3e12!7i5472!8i2736" class="card__item">
+                            <img src="../museum/src/assets/img/visiting/4.jpg" width="440" height="285" alt="cgreek hall">
                             <h3 class="card__title">greek hall</h3>
-                            <h4>360° Virtual Tour</h4>
-                            <p>Google Street Panorama View</p>
+                            <h4 class= "card__title-second">360° Virtual Tour</h4>
+                            <p class="card__description">Google Street Panorama View</p>
                         </a>
-                        <a href="#" class="card__item">
-                            <img src="../museum/assets/img/visiting/5.jpg" width="440" height="285" alt="mona lisa">
+                        <a href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120" class="card__item">
+                            <img src="../museum/src/assets/img/visiting/5.jpg" width="440" height="285" alt="mona lisa">
                             <h3 class="card__title">mona lisa</h3>
-                            <h4>360° Virtual Tour</h4>
-                            <p>Google Street Panorama View</p>
+                            <h4 class= "card__title-second">360° Virtual Tour</h4>
+                            <p class="card__description">Google Street Panorama View</p>
                         </a>
-                        <a href="#" class="card__item">
-                            <img src="..//museum/assets/img/visiting/6.jpg" width="440" height="285" alt="night palace">
+                        <a href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1sAF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652" class="card__item">
+                            <img src="..//museum/src/assets/img/visiting/6.jpg" width="440" height="285" alt="night palace">
                             <h3 class="card__title">night palace</h3>
-                            <h4>360° Virtual Tour</h4>
-                            <p>Google Street Panorama View</p>
+                            <h4 class= "card__title-second">360° Virtual Tour</h4>
+                            <p class="card__description">Google Street Panorama View</p>
                         </a>
                     </div>
             </div>
@@ -102,7 +126,7 @@
                     <p class="explore__text">It was cleaned in 1984 to remove a <span>"yellow veil"</span>  of dust that had gathered since the previous restoration in the 19th century.</p>
                     <p class="explore__text">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
                 </div>
-                    <img src="../museum/assets/img/explore-slider/1.png" alt="Las Meninas" class="explore__image">
+                    <img src="../museum/src/assets/img/explore-slider/1.png" alt="Las Meninas" class="explore__image">
             </div>
         </section>
         <section class="video" id="video">
@@ -118,21 +142,21 @@
                 <h2 class="gallery__title">art gallery</h2>
                 <div class="picture__wrapper">
                     <div class="picture-inner__wrapper">
-                        <div class="child"><img src="../museum/assets/img/galery/galery2.jpg" alt="gallery-image" class="gallery__image"></div>
-                        <div class="child"><img src="../museum/assets/img/galery/galery1.jpg" alt="gallery-image" class="gallery__image"></div>
-                        <div class="child"><img src="../museum/assets/img/galery/galery7.jpg" alt="gallery-image" class="gallery__image"></div>
-                        <div class="child"><img src="../museum/assets/img/galery/galery9.jpg" alt="gallery-image" class="gallery__image"></div>
-                        <div class="child"><img src="../museum/assets/img/galery/galery3.jpg" alt="gallery-image" class="gallery__image"></div>
-                        <div class="child"><img src="../museum/assets/img/galery/galery10.jpg" alt="gallery-image" class="gallery__image"></div>
-                        <div class="child"><img src="../museum/assets/img/galery/galery4.jpg" alt="gallery-image" class="gallery__image"></div>
-                        <div class="child"><img src="../museum/assets/img/galery/galery3.jpg" alt="gallery-image" class="gallery__image"></div>
-                        <div class="child"><img src="../museum/assets/img/galery/galery15.jpg" alt="gallery-image" class="gallery__image"></div>
-                        <div class="child"><img src="../museum/assets/img/galery/galery6.jpg" alt="gallery-image" class="gallery__image"></div>
-                        <div class="child"><img src="../museum/assets/img/galery/galery5.jpg" alt="gallery-image" class="gallery__image"></div>
-                        <div class="child"><img src="../museum/assets/img/galery/galery12.jpg" alt="gallery-image" class="gallery__image"></div>
-                        <div class="child"><img src="../museum/assets/img/galery/galery13.jpg" alt="gallery-image" class="gallery__image"></div>
-                        <div class="child"><img src="../museum/assets/img/galery/galery8.jpg" alt="gallery-image" class="gallery__image"></div>
-                        <div class="child"><img src="../museum/assets/img/galery/galery11.jpg" alt="gallery-image" class="gallery__image"></div>
+                        <div class="child"><img src="../museum/src/assets/img/galery/galery2.jpg" alt="gallery-image" class="gallery__image"></div>
+                        <div class="child"><img src="../museum/src/assets/img/galery/galery1.jpg" alt="gallery-image" class="gallery__image"></div>
+                        <div class="child"><img src="../museum/src/assets/img/galery/galery7.jpg" alt="gallery-image" class="gallery__image"></div>
+                        <div class="child"><img src="../museum/src/assets/img/galery/galery9.jpg" alt="gallery-image" class="gallery__image"></div>
+                        <div class="child"><img src="../museum/src/assets/img/galery/galery3.jpg" alt="gallery-image" class="gallery__image"></div>
+                        <div class="child"><img src="../museum/src/assets/img/galery/galery10.jpg" alt="gallery-image" class="gallery__image"></div>
+                        <div class="child"><img src="../museum/src/assets/img/galery/galery4.jpg" alt="gallery-image" class="gallery__image"></div>
+                        <div class="child"><img src="../museum/src/assets/img/galery/galery3.jpg" alt="gallery-image" class="gallery__image"></div>
+                        <div class="child"><img src="../museum/src/assets/img/galery/galery15.jpg" alt="gallery-image" class="gallery__image"></div>
+                        <div class="child"><img src="../museum/src/assets/img/galery/galery6.jpg" alt="gallery-image" class="gallery__image"></div>
+                        <div class="child"><img src="../museum/src/assets/img/galery/galery5.jpg" alt="gallery-image" class="gallery__image"></div>
+                        <div class="child"><img src="../museum/src/assets/img/galery/galery12.jpg" alt="gallery-image" class="gallery__image"></div>
+                        <div class="child"><img src="../museum/src/assets/img/galery/galery13.jpg" alt="gallery-image" class="gallery__image"></div>
+                        <div class="child"><img src="../museum/src/assets/img/galery/galery8.jpg" alt="gallery-image" class="gallery__image"></div>
+                        <div class="child"><img src="../museum/src/assets/img/galery/galery11.jpg" alt="gallery-image" class="gallery__image"></div>
                     </div>
                 </div>
             </div>
@@ -140,10 +164,12 @@
         <section class="tickets">
             <div class="wrapper tickets__wrapper">
                 <h2 class="tickets__title underline__title">buy tickets</h2>
-                <img src="/deniskhaliullin-JSFE2021Q3/museum/assets/img/tickets/1.jpg" alt="tickets-images">
+                <img src="/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/tickets/1.jpg" alt="tickets-images">
             </div>
         </section>
     </main>
     <footer></footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./src/index.js"></script>
 </body>
 </html>
