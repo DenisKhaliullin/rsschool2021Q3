@@ -19,6 +19,10 @@ button {
     text-decoration: none;
     font-family: 'Roboto', Verdana, sans-serif;
     letter-spacing: 2px;
+    &:hover {
+        background-color: $color-additional;
+    transition: .3s;
+    }
 }
 // video section
 .big-button-play {
@@ -116,4 +120,8 @@ button {
     text-align: center;
     letter-spacing: 2px;
     color: #FFFFFF;
+    &:hover {
+        background-color: $color-additional;
+    transition: .3s;
+    }
 }

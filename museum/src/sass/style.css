@@ -421,7 +421,7 @@ ul {
   transition: all 0.3s;
 }
 
-h3, h2, h1 {
+.logo__title, h3, h2, h1 {
   font-family: "Forum", Verdana, sans-serif;
 }
 
@@ -446,6 +446,10 @@ button {
   text-decoration: none;
   font-family: "Roboto", Verdana, sans-serif;
   letter-spacing: 2px;
+}
+.button__colored:hover {
+  background-color: #9d8665;
+  transition: 0.3s;
 }
 
 .big-button-play {
@@ -540,6 +544,10 @@ button {
   text-align: center;
   letter-spacing: 2px;
   color: #FFFFFF;
+}
+.buy__button:hover {
+  background-color: #9d8665;
+  transition: 0.3s;
 }
 
 html {
@@ -1385,6 +1393,130 @@ button.swiper-pagination-bullet {
 }
 .navigation__item:hover {
   color: #9d8665;
+}
+
+.navigation-footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 363px;
+  height: 128px;
+  column-gap: 165px;
+  row-gap: 25px;
+  left: 341px;
+  top: -53px;
+}
+
+.footer {
+  background-color: #030303;
+}
+
+.footer__wrapper {
+  height: 265px;
+  padding-top: 75px;
+}
+
+.logo {
+  width: 195px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+.logo:hover {
+  filter: invert(57%) sepia(6%) saturate(2052%) hue-rotate(356deg) brightness(84%) contrast(86%);
+  transition: 0.3s;
+}
+
+.logo__title {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 31px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.logo-svg {
+  background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/svg/logo.svg);
+  width: 49px;
+  height: 26px;
+  display: inline-block;
+}
+
+.social__item-list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  max-width: 340px;
+  bottom: 124px;
+}
+
+.social-link {
+  width: 48px;
+  height: 48px;
+  display: block;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-link:hover {
+  filter: invert(57%) sepia(6%) saturate(2052%) hue-rotate(356deg) brightness(84%) contrast(86%);
+  transition: 0.3s;
+}
+
+.youtube {
+  background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/svg/youtube.svg);
+}
+
+.instagram {
+  background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/svg/instagram.svg);
+}
+
+.facebook {
+  background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/svg/facebook.svg);
+}
+
+.twitter {
+  background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/svg/twitter.svg);
+}
+
+.pinterest {
+  background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/svg/pinterest.svg);
+}
+
+.frontier {
+  height: 3px;
+  background: #666666;
+}
+
+.lower-footer {
+  height: 124px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.lower-footer__text {
+  text-decoration: none;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.lower-footer__item:hover {
+  filter: invert(57%) sepia(6%) saturate(2052%) hue-rotate(356deg) brightness(84%) contrast(86%);
+  transition: 0.3s;
 }
 
 .welcome__wrapper {

@@ -26,3 +26,20 @@
         color: #9d8665;
     }
 }
+
+//footer navigation
+
+.navigation-footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 363px;
+    height: 128px;
+    column-gap: 165px;
+    row-gap: 25px;
+    left: 341px;
+    top: -53px;
+}
+

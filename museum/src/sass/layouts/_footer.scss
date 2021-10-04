@@ -1,0 +1,110 @@
+.footer {
+    background-color: $color-background-dark;
+}
+
+.footer__wrapper {
+    height: 265px;
+    padding-top: 75px;
+}
+
+.logo {
+    width: 195px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    &:hover {
+        filter: invert(57%) sepia(6%) saturate(2052%) hue-rotate(356deg) brightness(84%) contrast(86%);
+    transition: .3s;
+
+    }
+}
+
+.logo__title {
+    @extend %font-add;
+    @include font($size: 28px, $height: 31px);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: $color-light;
+}
+
+.logo-svg {
+    background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/svg/logo.svg);
+    width: 49px;
+    height: 26px;
+    display: inline-block;
+}
+
+.social__item-list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    max-width: 340px;
+    bottom: 124px;
+}
+
+
+.social-link {
+    width: 48px;
+    height: 48px;
+    display: block;
+    border: 1px solid $color-light;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover {
+        filter: invert(57%) sepia(6%) saturate(2052%) hue-rotate(356deg) brightness(84%) contrast(86%);
+    transition: .3s;
+    }
+}
+
+.youtube {
+    background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/svg/youtube.svg);
+}
+
+.instagram {
+    background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/svg/instagram.svg);
+}
+
+.facebook {
+    background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/svg/facebook.svg);
+}
+
+.twitter {
+    background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/svg/twitter.svg);
+}
+
+.pinterest {
+    background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/svg/pinterest.svg);
+}
+
+.frontier {
+    height: 3px;
+    background: #666666;
+}
+
+.lower-footer {
+    height: 124px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.lower-footer__text {
+    text-decoration: none;
+    @include font($size: 22px, $height: 22px, $weight: 200);
+    letter-spacing: 2px;
+    color: $color-light;
+    
+}
+
+.lower-footer__item {
+    &:hover {
+        filter: invert(57%) sepia(6%) saturate(2052%) hue-rotate(356deg) brightness(84%) contrast(86%);
+    transition: .3s;
+    }
+}
