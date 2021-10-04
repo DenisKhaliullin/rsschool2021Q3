@@ -1,9 +1,9 @@
+//welcome section
 button {
     border: none;
     background-color: transparent;
     padding: 0;
 }
-
 .button__colored {
     display: inline-block;
     width: 360px;
@@ -20,4 +20,100 @@ button {
     font-family: 'Roboto', Verdana, sans-serif;
     letter-spacing: 2px;
 }
+// video section
+.big-button-play {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    top: calc(50% - 110px);
+    left: calc(50% - 110px);
+    background: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/video/Big-play.svg);
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s;
+}
 
+.button-play {
+    width: 23px;
+    height: 31px;
+    background: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/video/play-icon.svg);
+    border: none;
+}
+
+.sound-item {
+    width: 38px;
+    height: 31px;
+    background: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/video/volume-icon.svg);
+    border: none;
+}
+
+.fullscreen-item {
+    width: 35px;
+    height: 35px;
+    background: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/video/fullscreen-icon.svg);
+    border: none;
+}
+//video playlist
+
+.swiper-control-right {
+    background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/video/Vector\ \(Stroke\)\ right.svg);
+    width: 10px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.swiper-control-left {
+    background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/video/Vector\ \(Stroke\)\ left.svg);
+}
+
+//tickets section
+
+.amount__number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    width: 150px;
+    height: 50px;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 0px;
+}
+
+.amount__button {
+    width: 40px;
+    display: block;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.amount__input {
+    padding: 0;
+    border: none;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.buy__button {
+    margin-top: 30px;
+    width: 175px;
+    height: 50px;
+    background: #000000;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}

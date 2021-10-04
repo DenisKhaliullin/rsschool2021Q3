@@ -1,18 +1,23 @@
+
+
 .explore__wrapper {
 display: flex;
 justify-content: space-between;
+height: 865px;
+column-gap: 60px;
 }
 
 .explore__title {
     color: $color-light;
     margin: 0;
-    padding-bottom: 79px;
+    padding-top: 75px;
+    margin-bottom: 103px;
     position: relative;
     &::after {
         content: '';
         position: absolute;
         left: 0;
-        top: 115px;
+        top: 190px;
         width: 100%;
         height: 3px;
         background-color: #710707;
@@ -24,14 +29,22 @@ justify-content: space-between;
 .explore__text {
     color: $color-light;
     max-width: 660px;
+    padding-top: 25px;
+    margin: 0;
 
     @include font ($size: 22px, $height: 38px, $weight: 300)
     
+}
+
+.first-line {
+    padding: 0;
 }
 
 .explore__text span {
     color: #CAAA7D;
 }
 .explore__image {
-    padding-bottom: 75px;
+    padding-top: 90px;
+    width: 720px;
+    height: 700px;
 }
