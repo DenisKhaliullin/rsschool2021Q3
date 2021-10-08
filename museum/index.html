@@ -234,6 +234,106 @@
                     </div>
                 </div>
             </div>
+            <div class="overlay overlay-hidden"></div>
+            <div class="booking-tickets tickets-hidden">
+                <div class="close__button"></div>
+                <div class="booking-tickets__wrapper">
+                    <div class="left-colunm">
+                            <span class="booking-tickets__logo"></span>
+                            <p class="booking-tickets__title">Booking tickets</p>
+                            <p class="booking-tickets__under-title">Tour to Louvre</p>
+                            <form class="booking-tikets__form">
+                                <div class="date-time__wrapper">
+                                    <input type="date" name="date" id="date" class="tickets__field booking-tickets__date" required>
+                                    <input type="time" name="time" id="time" class="tickets__field booking-tickets__time" required>
+                                </div>
+                                <input type="text" name="name" placeholder="Name" class="tickets__field booking-tickets__name-field" required>
+                                <input type="text" name="E-mail" placeholder="E-mail" class="tickets__field booking-tickets__mail-field" required>
+                                <input type="text" name="Phone" placeholder="Phone" class="tickets__field booking-tickets__phone-field" required>
+                                <select name="ticket-type" id="ticket-type" class="tickets__field select-block" required>
+                                    <option disabled selected value="select">Ticket Type</option>
+                                    <option value="value-1">Permanent exhibition</option>
+                                    <option value="value-2">Temporary exhibition</option>
+                                    <option value="value-3">Combined Admission</option>  
+                                </select>
+                                <div class="booking__entry-ticket">
+                                    <p class="entry-ticket__title">Entry Ticket</p>
+                                    <div class="tickets-type-first">
+                                        <p class="tickets-type__text">Basic 18+ (20 €)</p>
+                                        <div class="entry-ticket__number">
+                                            <button class="entry-ticket__button" type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+                                            <input class="entry-ticket__input" type="number" min="0" max="20" value="1" readonly style="width: 35px;">
+                                            <button class="entry-ticket__button" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="tickets-type-twice">
+                                        <p class="tickets-type__text">Senior 65+ (10 €)</p>
+                                        <div class="entry-ticket__number">
+                                            <button class="entry-ticket__button" type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+                                            <input class="entry-ticket__input" type="number" min="0" max="20" value="1" readonly style="width: 35px;">
+                                            <button class="entry-ticket__button" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+                    <div class="right-colunm">
+                            <div class="payment__text">
+                                <p class="overview__title">Overview</p>
+                                <p class="overview__subtitle">Tour to Louvre</p>
+                                <p class="overview__date">Friday, August 19</p>
+                                <p class="overview__time">16 : 30</p>
+                                <p class="overview__exhibition-type">Temporary exhibition</p>
+                            </div>
+                            <img class="right-colunm__image" src="/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/tickets/booking-image.jpg" alt="form-image">
+                            <div class="basic-price">
+                                <div class="sum basic-price__count">
+                                    <div class="sum-description">
+                                        <span class="price-count basic__count">2</span>
+                                        <p class="basic-price__text">Basic (20 €)</p>
+                                    </div>
+                                    <p class="basic-sum__count"><span class="basic__sum">40</span> €</p>
+                                </div>
+                            </div>
+                            <div class="senior-price">
+                                <div class="sum senior-price__count">
+                                    <div class="sum-description">
+                                        <span class="price-count senior__count">2</span>
+                                        <p class="senior-price__text">Senior (10 €)</p>
+                                    </div>
+                                    <p class="senior-sum__count"><span class="senior__sum">20</span> €</p>
+                                </div>
+                            </div>
+                            <div class="sum price-total">
+                                <p>Total: </p>
+                                <p><span class="total__price">60</span> €</p>
+                            </div>
+                            <div class="card-top-side">
+                                <div class="visa__image"></div>
+                                <div class="mastercard__image"></div>
+                                    <p class="card__text">Card number</p>
+                                    <input type="text" maxlength="16" class="card-number__input" required>
+                                    <p class="card__text card-experation__text">Expiration date</p>
+                                    <div class="card-expiration__block">
+                                        <input type="number" value="3" min="1" max="12" class="card-exp__month" required>
+                                        <input type="number" value="2024" min="2021" max="2026" class="card-exp__year">
+                                    </div>
+                                    <p class="card__text cardholder-name__text">Cardholder name</p>
+                                    <input type="text" class="cardholder-name__input" required>
+                            </div>
+                            <div class="card-back-side">
+                                    <div class="card__black-line"></div>
+                                    <div class="cvc__wrapper">
+                                        <p class="card__text cvc__text">cvc/cvv</p>
+                                        <input type="text" class="cvc__input" required>
+                                        <p class="card__text cvc-subtext__text">The last<br>3 or 4 digits<br>on back<br>of the card</p>
+                                    </div>
+                            </div>
+                            <button class="button booking-tickets__button">Book</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="parallax">
             <div class="parallax__wrapper"></div>
@@ -250,7 +350,6 @@
                     </div>
                     <img class="contacts-map__image" src="src/assets/img/map-image.jpg" alt="map-image">
                 </div>
-                
         </section>   
     </main>
     <footer class="footer">

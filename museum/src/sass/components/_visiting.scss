@@ -45,8 +45,12 @@
         width: 68%;
         height: 3px;
         background-color: #710707;
-        transition: width 1s;
+        transition: width .5s;
     }
+}
+
+.card__item:hover .card__title:after {
+    width: 100%;
 }
 
 .card__title-second {

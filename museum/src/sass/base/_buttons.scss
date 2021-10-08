@@ -106,6 +106,12 @@ button {
     text-align: center;
 }
 
+.amount__input::-webkit-outer-spin-button,
+.amount__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .buy__button {
     margin-top: 30px;
     width: 175px;
@@ -124,4 +130,61 @@ button {
         background-color: $color-additional;
     transition: .3s;
     }
+}
+
+//booking tickets button
+
+.entry-ticket__number {
+    display: flex;
+    margin-left: auto;
+    width: 105px;
+    height: 25px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.entry-ticket__input {
+   width: 35px;
+   all: unset;
+   text-align: center;
+}
+
+.entry-ticket__input::-webkit-outer-spin-button,
+.entry-ticket__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.entry-ticket__button {
+    width: 35px;
+    display: block;
+    border: none;
+    text-align: center;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.booking-tickets__button {
+    position: relative;
+    bottom: 155px;
+    left: 250px;
+    width: 220px;
+    height: 50px;
+    background-color: #710707;
+    color: $color-light;
+    &:hover {
+        background-color: $color-additional;
+        transition: .3s;
+    }
+}
+
+.close__button {
+    display: inline-block;
+    position: absolute;
+    right: 27px;
+    top: 30px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/tickets/Close.svg);
 }

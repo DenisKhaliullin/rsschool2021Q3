@@ -1,0 +1,394 @@
+.booking-tickets {
+    width: 1440px;
+    height: 845px;
+    padding: 91px 235px;
+    position: fixed;
+    top: calc(50vh - 423px);
+    right: calc(50vw - 720px);
+    z-index: 100;
+    background-color: $color-light;
+    transition: 0.5s;
+
+    @include font($size: 18px, $height: 21px);
+    font-family: 'Roboto', Verdana, sans-serif;
+}
+
+.tickets-hidden {
+    right: 100vw;
+}
+
+.booking-tickets__wrapper {
+    width: 970px;
+    height: 663px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-colunm {
+    width: 400px;
+}
+
+.booking-tickets__logo {
+    width: 85px;
+    height: 41px;
+    background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/tickets/logo.svg);
+    display: inline-block;
+}
+
+.booking-tickets__title {
+    margin: 0;
+    color: $color-additional;
+    text-transform: uppercase;
+
+    @extend %font-add;
+    @include font($size: 50px, $height: 55px);
+}
+
+.booking-tickets__under-title {
+    position: relative;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 53px;
+    color: #710707;
+    font-weight: 600;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top:28px;
+        width: 100%;
+        height: 3px;
+        background-color: #710707;
+    }
+}
+
+.tickets__field {
+    width: 400px;
+    height: 45px;
+    border: 1px solid #030303;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+
+.date-time__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-tickets__date {
+    width: 190px;
+    height: 45px;
+
+}
+
+.booking-tickets__time {
+    width: 190px;
+    height: 45px;
+
+}
+
+.booking__entry-ticket {
+    width: 400px;
+    height: 135px;
+    padding: 10px 15px 15px 15px;
+    border: 1px solid #030303;
+    box-sizing: border-box;
+    margin-top: 20px;
+    p {
+        margin: 0;
+    }
+}
+
+.entry-ticket__title {
+    margin: 0;
+    position: relative;
+    @include font($size: 18px, $height: 20px);
+    @extend %font-add;
+    color: $color-additional;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 20px;
+        width: 100%;
+        height: 3px;
+        background-color: #710707;
+    }
+}
+
+.tickets-type-first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.tickets-type-twice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.right-colunm {
+    width: 530px;
+    height: 663px;
+    padding: 25px 30px;  
+    border: 1px solid #030303;
+    box-sizing: border-box;
+    position: relative;
+       
+}
+
+.overview__title {
+    margin: 0;
+    @include font($size: 32px, $height: 37px, $weight: 500)
+}
+
+.right-colunm__image {
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    top: 23px;
+    right: 25px;
+}
+
+.overview__subtitle {
+    margin: 0;
+    @include font($size: 22px, $height: 26px, $weight: 600);
+    color: #740C11;
+    opacity: 0.9;
+}
+
+.overview__date {
+    margin: 0;
+    padding-top: 12px;
+    padding-left: 30px;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        left: 30px;
+        background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/tickets/date.svg);
+    }
+}
+
+.overview__time {
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 30px;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        left: 30px;
+        background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/tickets/Time.svg);
+    }
+}
+
+.overview__exhibition-type {
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 30px;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        left: 30px;
+        background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/tickets/Vector.svg);
+    }
+}
+.sum  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-count {
+    text-align: center;
+    width: 32px;
+    height: 20px;
+    background: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/tickets/Rectangle.svg);
+    color: #A4A4A3;
+}
+
+.sum-description {
+    display: flex;
+    align-items: center;
+}
+
+.basic-sum__count {
+    margin: 0;
+}
+
+.senior-sum__count {
+    margin: 0;
+}
+
+.basic-price {
+    margin-top: 25px;
+}
+
+.senior-price__text, .basic-price__text, .basic__sum, .senior__sum {
+margin: 0;
+padding-left: 10px;
+
+@include font($size: 22px, $height: 26px, $weight: 600)
+}
+
+.senior-price {
+    position: relative;
+    margin-top: 5px;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 35px;
+        width: 100%;
+        height: 3px;
+        background-color: #710707;
+    }
+
+}
+
+.price-total {
+    padding-top: 21px;
+    @include font($size: 22px, $height: 26px);
+        p {
+            margin: 0;
+            @include font($size: 32px, $height: 37px, $weight: 600)
+        }
+}
+
+.card-top-side {
+    position: relative;
+    width: 360px;
+    height: 211px;
+    margin-top: 10px;
+    background-color: #BCBCBC;
+    padding: 15px 20px;
+    z-index: 5;
+}
+
+.card__text {
+    margin: 0;
+    @include font($size: 12px, $height: 14px);
+}
+
+.card-number__input {
+    width: 215px;
+    height: 35px;
+    margin-top: 5px;
+}
+
+.card-experation__text {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.card-exp__month {
+    width: 100px;
+    height: 35px;
+}
+
+.card-exp__year {
+    width: 100px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.card-exp__month::-webkit-inner-spin-button,
+.card-exp__year::-webkit-inner-spin-button {
+    opacity: 1
+}
+
+.cardholder-name__text {
+    margin-top: 10px;
+}
+
+.cardholder-name__input {
+    position: absolute;
+    width: 320px;
+    height: 35px;
+    margin-top: 5px;
+}
+
+.visa__image {
+    position: absolute;
+    width: 55px;
+    height: 16px;
+    top: 35px;
+    right: 20px;
+    background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/tickets/Visa.svg);
+}
+
+.mastercard__image {
+    position: absolute;
+    width: 53px;
+    height: 32px;
+    top: 65px;
+    right: 20px;
+    background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/tickets/Mastercard.svg);
+}
+
+.card-back-side {
+    position: relative;
+    left: 110px;
+    bottom: 180px;
+    width: 360px;
+    height: 211px;
+    background-color: #939393;
+}
+
+.card__black-line {
+    height: 45px;
+    position: absolute;
+    top: 25px;
+    background-color: #161615;
+}
+
+.cvc__wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75px;
+    height: 111px;
+    bottom: 10px;
+    right: 20px;
+}
+
+.cvc__input {
+    width: 75px;
+    height: 35px;
+}
+
+.cvc__text {
+    
+    text-transform: uppercase;
+    @include font($size: 12px, $height: 14px);
+}
+
+.cvc-subtext__text {
+    margin-top: 10px;
+    @include font($size: 10px, $height: 12px);
+}
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    transition: 0.5s;
+}
+
+.overlay-hidden {
+    right: 100vw;
+}
+

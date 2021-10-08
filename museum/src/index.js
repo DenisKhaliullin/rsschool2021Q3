@@ -68,6 +68,29 @@ function videoSlider() {
     });
 }
 
+//tickets buy form
+
+function buy() {
+  let buyForm = document.querySelector('.tickets-hidden');
+  let over = document.querySelector('.overlay-hidden');
+  const openForm = document.querySelector('.buy__button');
+  const closeForm = document.querySelector('.close__button');
+
+  openForm.addEventListener ('click', function() {
+    buyForm.classList.remove("tickets-hidden");
+    over.classList.remove("overlay-hidden");
+      
+  })
+
+  closeForm.addEventListener ('click', function() {
+    buyForm.classList.add("tickets-hidden");
+    over.classList.add("overlay-hidden");
+})
+
+}
+
+buy();
+
 initSlider();
 videoBar();
 volumeBar();
