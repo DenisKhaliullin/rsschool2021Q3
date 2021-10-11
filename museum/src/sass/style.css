@@ -1815,9 +1815,41 @@ button.swiper-pagination-bullet {
 }
 
 .explore__image {
-  padding-top: 90px;
   width: 720px;
   height: 700px;
+}
+
+.explore__overlay {
+  width: 720px;
+  height: 700px;
+}
+
+.explore-comparison__wrapper {
+  position: relative;
+  right: 720px;
+  top: 90px;
+  height: 700px;
+}
+
+.explore-comparison__image {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.explore-comparison__image img {
+  display: block;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  width: 40px;
+  height: 700px;
+  background-image: url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/img/explore-slider/exploreSlider.svg);
+  color: #ffffff;
 }
 
 .gallery {
