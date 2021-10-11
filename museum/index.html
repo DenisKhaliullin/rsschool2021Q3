@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/sass/style.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
     <title>museum</title>
 </head>
 <body>
@@ -356,7 +358,7 @@
                         <a class="contact__text contacts__tel" href="tel:+330140205050">phone: +33(0) 1 40 20 50 50</a>
                         <a class="contact__text contacts__mail" href="mailto:info@louvre.fr">mail: info@louvre.fr</a>
                     </div>
-                    <img class="contacts-map__image" src="src/assets/img/map-image.jpg" alt="map-image">
+                    <div class="map" id="map"></div>
                 </div>
         </section>   
     </main>
