@@ -28,44 +28,63 @@
       welcomeSlider.on('activeIndexChange', sliderCount)
 }
 
-//video progress
+//tickets
 
-function videoBar() {
-    const progress = document.querySelector('.video-progress');
-  
-progress.addEventListener('input', function() {
-  const value = this.value;
-  this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #c4c4c4 ${value}%, #c4c4c4 100%)`
-})
-}
+const ticketBasicMinus = document.querySelectorAll('.amount-minus-basic');
+const ticketBasicPlus = document.querySelectorAll('.amount-plus-basic');
+const ticketSeniorMinus = document.querySelectorAll('.amount-minus-senior');
+const ticketSeniorPlus = document.querySelectorAll('.amount-plus-senior');
+const ticketBasicAmount = document.querySelectorAll('.basic-amount');
+const ticketSeniorAmount = document.querySelectorAll('.senior-amount');
+const ticketBasicSum = document.querySelector('.basic__sum');
+const ticketSeniorSum = document.querySelector('.senior__sum');
+const ticketTotalSum = document.querySelectorAll('.total-sum');
 
-//volume progress
+let counterBasic = 1;
+let counterSenior = 1;
 
-function volumeBar() {
-    const progress = document.querySelector('.volume-progress');
-  
-progress.addEventListener('input', function() {
-  const value = this.value;
-  this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #c4c4c4 ${value}%, #c4c4c4 100%)`
-})
-}
+ticketBasicAmount.forEach(item => item.textContent = counterBasic);
+ticketSeniorAmount.forEach(item => item.textContent = counterSenior);
+ticketBasicSum.textContent = `${counterBasic * 20}`;
+ticketSeniorSum.textContent = `${counterSenior * 10}`;
+ticketTotalSum.forEach(item => item.textContent = `${counterBasic * 20 + counterSenior * 10}`);
 
-function videoSlider() {
-  console.log('Hello');
-   const videoSwiper = new Swiper('.video-section__swiper', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        simulateTouch: false,
-        pagination: {
-          el: ".video-swiper-pagination",
-          clickable: true,
+for (let i = 0; i < ticketBasicMinus.length; i++) {
+	ticketBasicMinus[i].addEventListener("click", function () {
+		if (counterBasic > 0) {
+			counterBasic--
+			ticketBasicAmount.forEach(item => item.textContent = counterBasic);
+			ticketBasicSum.textContent = `${counterBasic * 20}`;
+			ticketTotalSum.forEach(item => item.textContent = `${counterBasic * 20 + counterSenior * 10}`);
+		}
+	});
 
-          navigation: {
-            nextEl: '.swiper-control-right',
-            prevEl: '.swiper-control-right'
-          },
-        },
-    });
+	ticketBasicPlus[i].addEventListener("click", function () {
+		if (counterBasic < 20) {
+			counterBasic++;
+			ticketBasicAmount.forEach(item => item.textContent = counterBasic);
+			ticketBasicSum.textContent = `${counterBasic * 20}`;
+			ticketTotalSum.forEach(item => item.textContent = `${counterBasic * 20 + counterSenior * 10}`);
+		}
+	});
+
+	ticketSeniorMinus[i].addEventListener("click", function () {
+		if (counterSenior > 0) {
+			counterSenior--
+			ticketSeniorAmount.forEach(item => item.textContent = counterSenior);
+			ticketSeniorSum.textContent = `${counterSenior * 10}`;
+			ticketTotalSum.forEach(item => item.textContent = `${counterBasic * 20 + counterSenior * 10}`);
+		}
+	});
+
+	ticketSeniorPlus[i].addEventListener("click", function () {
+		if (counterSenior < 20) {
+			counterSenior++;
+			ticketSeniorAmount.forEach(item => item.textContent = counterSenior);
+			ticketSeniorSum.textContent = `${counterSenior * 10}`;
+			ticketTotalSum.forEach(item => item.textContent = `${counterBasic * 20 + counterSenior * 10}`);
+		}
+	});
 }
 
 //tickets buy form
@@ -154,12 +173,10 @@ center: [2.3364, 48.86091],
 zoom: 15.5
 });
 
-// Create a default Marker and add it to the map.
 const marker1 = new mapboxgl.Marker({ color: 'black'})
 .setLngLat([2.3333, 48.8602])
 .addTo(map);
- 
-// Create a default Marker, colored black, rotated 45 degrees.
+
 const marker2 = new mapboxgl.Marker({ color: 'black'})
 .setLngLat([2.3397, 48.8607])
 .addTo(map);
@@ -178,6 +195,123 @@ const marker5 = new mapboxgl.Marker({ color: 'black'})
 
 map.addControl(new mapboxgl.NavigationControl());
 
+//gallery
+
+const animItems = document.querySelectorAll('._anim-items');
+if (animItems.length > 0) {
+  window.addEventListener('scroll', animOnScroll);
+  function animOnScroll() {
+    for (let index = 0; index < animItems.length; index++) {
+      const animItem = animItems[index];
+      const animItemHeight = animItem.offsetHeight;
+      const animItemOffset = offset(animItem).top;
+      const animStart = 3;
+
+      let animItemPoint = window.innerHeight - animItemHeight / animStart;
+
+      if (animItemHeight > window.innerHeight) {
+        animItemPoint = window.innerHeight - window.innerHeight / animStart;
+      }
+
+      if ((scrollY > animItemOffset - animItemPoint) && scrollY < (animItemOffset + animItemHeight)) {
+        animItem.classList.add('_active');
+      }else{
+        if(!animItem.classList.contains('anim-no-hide'))
+        animItem.classList.remove('_active');
+      }
+    }
+  }
+  function offset(el) {
+    const rect = el.getBoundingClientRect(),
+      scrollLeft = window.scrollX || document.documentElement.scrollLeft,
+      scrollTop = window.scrollY || document.documentElement.scrollTop;
+      return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+  }
+}
+
+//video player
+
+const player = document.querySelector('.video-player');
+const video = player.querySelector('.video-section-player');
+const playButtonBig = player.querySelector('.big-button-play');
+const playButton = player.querySelector('.button-play');
+const progressBar = player.querySelector('.video-progress');
+const soundButton = player.querySelector('.sound-item');
+const ranges = player.querySelector('.volume-progress');
+const fullScreen =player.querySelector('.fullscreen-item');
+
+function tooglePlay() {
+
+  const method = video.paused ? 'play' : 'pause';
+  video[method]();
+}
+
+function updateButton() {
+  if(this.paused){
+    playButton.style.background = `url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/video/play-icon.svg)`
+    playButtonBig.style.display = ''
+  }else {
+    playButton.style.background = `url(/deniskhaliullin-JSFE2021Q3/museum/src/assets/video/pause.svg)`
+    playButtonBig.style.display = 'none'
+  }
+}
+
+function handleRangeUpdate() {
+  console.log(this.name)
+  console.log(this.value);
+}
+
+video.addEventListener('click', tooglePlay);
+video.addEventListener('play', updateButton);
+video.addEventListener('pause', updateButton);
+
+playButtonBig.addEventListener('click', tooglePlay);
+playButton.addEventListener('click', tooglePlay);
+
+
+//video progress
+
+function videoBar() {
+  const progress = document.querySelector('.video-progress');
+
+progress.addEventListener('input', function() {
+const value = this.value;
+this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #c4c4c4 ${value}%, #c4c4c4 100%)`
+})
+}
+
+//volume progress
+
+function volumeBar() {
+  const progress = document.querySelector('.volume-progress');
+
+progress.addEventListener('input', function() {
+const value = this.value;
+this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #c4c4c4 ${value}%, #c4c4c4 100%)`
+})
+}
+
+// video slider
+function videoSlider() {
+console.log('Hello');
+ const videoSwiper = new Swiper('.video-section__swiper', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      simulateTouch: false,
+      pagination: {
+        el: ".video-swiper-pagination",
+        clickable: true,
+
+        navigation: {
+          nextEl: '.swiper-control-right',
+          prevEl: '.swiper-control-right'
+        },
+      },
+  });
+}
+
+
+animOnScroll();
 initComparisons();
 buy();
 
