@@ -1,3 +1,4 @@
+import { showGreeting } from "./greeting.js"
 const time = document.querySelector('.time');
 const date = document.querySelector('.date')
 
@@ -5,7 +6,8 @@ function showTime() {
     const day = new Date();
     time.textContent = day.toLocaleTimeString();
     showDate();
-    setTimeout(showTime, 1000)
+    showGreeting();
+    setTimeout(showTime, showGreeting, showDate(), 1000)
 }
 
 function showDate() {
