@@ -1,5 +1,7 @@
 import { showTime } from "./calendar.js";
+import { setBg, getSlideNext, getSlidePrev } from "./slider.js";
 
+let slideNext = document.querySelector('.slide-next');
 const name = document.querySelector('.name');
 name.value = '[Enter name]';
 function setLocalStorage() {
@@ -13,4 +15,7 @@ function setLocalStorage() {
     }
   }
   window.addEventListener('load', getLocalStorage)
+
 showTime();
+setBg();
+

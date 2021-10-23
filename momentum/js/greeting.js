@@ -28,4 +28,4 @@ function showGreeting() {
 }
 
 
-export {showGreeting};
+export {showGreeting, getTimeOfDay};
