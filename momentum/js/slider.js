@@ -48,4 +48,5 @@ slideNext.addEventListener('click', getSlideNext);
 
 slidePrev.addEventListener('click', getSlidePrev);
 
+
 export {setBg, getSlideNext, getSlidePrev};
