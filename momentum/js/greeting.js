@@ -29,7 +29,7 @@ function showGreeting() {
 }
 
 const name = document.querySelector('.name');
-name.value = '[Enter name]';
+name.placeholder = '[Enter name]';
 
 function setLocalStorage() {
     localStorage.setItem('name', name.value);

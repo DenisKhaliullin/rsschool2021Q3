@@ -22,6 +22,7 @@ async function getWeather() {
     weatherDescription.textContent = data.weather[0].description;
 }
 
+
 function setCity(event) {
     if (event.code === 'Enter') {
       getWeather();
