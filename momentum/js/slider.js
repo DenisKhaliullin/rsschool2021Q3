@@ -1,7 +1,7 @@
 import {getTimeOfDay} from "./greeting.js"
 const body = document.querySelector("body")
 let randomNum = mathRandom(1, 20);
-let slideNext = document.querySelector('.slide-next');
+const slideNext = document.querySelector('.slide-next');
 const slidePrev = document.querySelector('.slide-prev');
 
 function mathRandom(min, max) {
