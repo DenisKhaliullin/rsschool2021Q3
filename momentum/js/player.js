@@ -62,7 +62,6 @@ audio.addEventListener('ended',function(){
 });
 
 //custom
-console.log(playList[playNum].duration)
 audio.addEventListener(
     "loadeddata",
     () => {
@@ -117,7 +116,5 @@ playButton.addEventListener('click', playAudio);
 playNextBtn.addEventListener('click', playNext);
 playPrevBtn.addEventListener('click', playPrev);
 
-
-console.dir(audio)
 export { playAudio, playNext, playPrev }
 
